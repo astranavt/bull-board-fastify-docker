@@ -44,7 +44,7 @@ const run = async () => {
     serverAdapter,
   });
 
-  await server.listen(port);
+  await server.listen(port, '0.0.0.0');
 
   console.info(`🚀 Running on ${port}...`);
   console.info(`🎯 Dashboard: http://localhost:${port}/ui`);
