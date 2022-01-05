@@ -1,0 +1,130 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "browser": false,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["prettier", "import"],
+  "rules": {
+    "prefer-const": "error",
+    "no-dupe-args": "error",
+    "arrow-spacing": "error",
+    "arrow-body-style": "error",
+    "block-spacing": "error",
+    "block-scoped-var": "error",
+    "camelcase": "error",
+    "default-case": "error",
+    "consistent-return": "error",
+    "eqeqeq": "error",
+    "generator-star-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true,
+        "anonymous": "neither",
+        "method": { "before": true, "after": true }
+      }
+    ],
+    "yoda": "error",
+    "vars-on-top": "error",
+    "switch-colon-spacing": "error",
+    "semi": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true
+      }
+    ],
+    "no-alert": ["error"],
+    "import/extensions": [
+      0,
+      "never",
+      {
+        "ts": "never"
+      }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
+      },
+      { "blankLine": "always", "prev": ["case", "default"], "next": "*" },
+      { "blankLine": "always", "prev": "directive", "next": "*" },
+      { "blankLine": "any", "prev": "directive", "next": "directive" }
+    ],
+    "id-match": ["error", "^[^а-яА-Я]+$", { "properties": true }],
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "String": {
+            "message": "Use string instead",
+            "fixWith": "string"
+          },
+          "Boolean": {
+            "message": "Use boolean instead",
+            "fixWith": "boolean"
+          },
+          "Number": {
+            "message": "Use number instead",
+            "fixWith": "number"
+          },
+          "Object": {
+            "message": "Use Record<string, any> instead",
+            "fixWith": "Record<string, any>"
+          },
+          "Symbol": {
+            "message": "Use symbol instead",
+            "fixWith": "symbol"
+          }
+        }
+      }
+    ],
+    "@typescript-eslint/no-empty-function": ["error"],
+    "@typescript-eslint/explicit-module-boundary-types": ["error"],
+    "func-names": ["error", "always"],
+    "sort-imports": ["error", { "ignoreDeclarationSort": true }],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object"
+        ]
+      }
+    ],
+    "brace-style": ["error"],
+    "curly": ["error"],
+    "no-duplicate-imports": ["error", { "includeExports": true }],
+    "prefer-destructuring": ["error", { "object": true, "array": true }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      },
+      "eslint-import-resolver-typescript": true
+    }
+  }
+}
