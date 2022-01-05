@@ -9,6 +9,7 @@ docs
 doc
 website
 images
+!@bull-board/ui/dist/static/images
 assets
 
 # examples
