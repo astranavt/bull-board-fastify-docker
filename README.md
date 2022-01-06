@@ -1,6 +1,6 @@
 # bull-board-fastify-docker
 
-Docker image for [Bull-Board](https://github.com/felixmosh/bull-board) based on [fastify](www.fastify.io) framework
+Docker image for [Bull-Board](https://github.com/felixmosh/bull-board) based on [fastify](https://fastify.io) framework
 
 [Bull-board](https://github.com/felixmosh/bull-board) version 3.8.1
 
