@@ -11,10 +11,10 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@bull-board/fastify": "^3.8.1",
-    "bullmq": "^1.63.2",
+    "@bull-board/fastify": "^3.9.0",
+    "bullmq": "^1.64.3",
     "fastify": "^3.25.3",
-    "ioredis": "^4.28.2"
+    "ioredis": "^4.28.3"
   },
   "devDependencies": {
     "@types/ioredis": "^4.28.7",

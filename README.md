@@ -2,7 +2,7 @@
 
 Docker image for [Bull-Board](https://github.com/felixmosh/bull-board) based on [fastify](https://fastify.io) framework
 
-[Bull-board](https://github.com/felixmosh/bull-board) version 3.8.1
+[Bull-board](https://github.com/felixmosh/bull-board) version 3.9.0
 
 ## How to use this image
 

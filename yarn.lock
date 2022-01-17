@@ -2,30 +2,30 @@
 # yarn lockfile v1
 
 
-"@bull-board/api@3.8.1":
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/@bull-board/api/-/api-3.8.1.tgz#d0552ac884b83df7d3b5644c7cc9ff27b66844b9"
-  integrity sha512-jphGWH31n231uuKe2TAPexspZ3TuOj6J2NlvIqWtc7bwY+TN24nD5ug127uBQaoayZZAHlms07U4CVZzK6B7Dw==
+"@bull-board/api@3.9.0":
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@bull-board/api/-/api-3.9.0.tgz#5bd22fc2147b2f23637276c9aee2c8fb78f17e82"
+  integrity sha512-ylMC0BghnTW8+eM5m0Q4o1PO5RCVWfhs9jgeb/4THHVeuSothXh5pWS7uJGafiy6vvczUaJsoUrS3a/sttHlBw==
   dependencies:
     redis-info "^3.0.8"
 
-"@bull-board/fastify@^3.8.1":
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/@bull-board/fastify/-/fastify-3.8.1.tgz#e59578d18a1345a25e6fa35142c0529965bd7733"
-  integrity sha512-lZyO1ilDf3MnmT5ebXta8mXl9yqtVxAZUST0SfldWRIxgHjXdayIx+OcMeu9F8xFW/jQJmkXZT/1UYBwN/9PxQ==
+"@bull-board/fastify@^3.9.0":
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@bull-board/fastify/-/fastify-3.9.0.tgz#317392920b5857833ebf292917dd91fab4231eef"
+  integrity sha512-sSXoltc8M0gqOgL1YXphWE3530mxXpdjLeMi7pXZX38K2lwxRsjk9grde1HbX4xdMmSm/LS7MvOFsNyZTAh3Sg==
   dependencies:
-    "@bull-board/api" "3.8.1"
-    "@bull-board/ui" "3.8.1"
+    "@bull-board/api" "3.9.0"
+    "@bull-board/ui" "3.9.0"
     ejs "^3.1.6"
     fastify-static "^4.2.2"
     point-of-view "^4.14.0"
 
-"@bull-board/ui@3.8.1":
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/@bull-board/ui/-/ui-3.8.1.tgz#95822aadffa456cf0c207270b877f8b1bfd247bd"
-  integrity sha512-xprdPitK+GwwVw/KCcDP4pms7F2TUWsW0IMC2UQ5BfhGyok8yQv5A6sjVU8ZjCG3dvvdj+4qTtvk8CAFZDXcEQ==
+"@bull-board/ui@3.9.0":
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@bull-board/ui/-/ui-3.9.0.tgz#0fdb8e717468cf9b6daf3214d2af7f659b52979d"
+  integrity sha512-hPwWwSAf+jEhaJIugtK8ga9yE/A1QwWkPm3MA65ykekZVpDKg8bikcYa9YTFw9LwhzWQwW7MEN1prJyge7PQgQ==
   dependencies:
-    "@bull-board/api" "3.8.1"
+    "@bull-board/api" "3.9.0"
 
 "@eslint/eslintrc@^1.0.5":
   version "1.0.5"
@@ -320,10 +320,10 @@ braces@^3.0.1:
   dependencies:
     fill-range "^7.0.1"
 
-bullmq@^1.63.2:
-  version "1.63.2"
-  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-1.63.2.tgz#17b761c91ca86a45e6f189de2cfb39b3ae920309"
-  integrity sha512-tLPBEwTpp+2v+CrTcwV1ITFerHcabYXG6ddXIa4/CxdCosQofLFD+xqLZXptbsrdw45TtBtpb+xbIeILGiAymw==
+bullmq@^1.64.3:
+  version "1.64.3"
+  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-1.64.3.tgz#54470239086d6cf2e7a322415b9913f727bad42b"
+  integrity sha512-FZ55Pm2agr8zVZ/Xf/Vuk9aoewI3rE4deADXX9C3my/Bu4xxUJ4r3CM/jSa82tgNwcvsSywpicPLog5WbsvNWA==
   dependencies:
     cron-parser "^2.18.0"
     get-port "^5.1.1"
@@ -1237,6 +1237,23 @@ ioredis@^4.28.2:
   version "4.28.2"
   resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.28.2.tgz#493ccd5d869fd0ec86c96498192718171f6c9203"
   integrity sha512-kQ+Iv7+c6HsDdPP2XUHaMv8DhnSeAeKEwMbaoqsXYbO+03dItXt7+5jGQDRyjdRUV2rFJbzg7P4Qt1iX2tqkOg==
+  dependencies:
+    cluster-key-slot "^1.1.0"
+    debug "^4.3.1"
+    denque "^1.1.0"
+    lodash.defaults "^4.2.0"
+    lodash.flatten "^4.4.0"
+    lodash.isarguments "^3.1.0"
+    p-map "^2.1.0"
+    redis-commands "1.7.0"
+    redis-errors "^1.2.0"
+    redis-parser "^3.0.0"
+    standard-as-callback "^2.1.0"
+
+ioredis@^4.28.3:
+  version "4.28.3"
+  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.28.3.tgz#b13fce8a6a7c525ba22e666d72980a3c0ba799aa"
+  integrity sha512-9JOWVgBnuSxpIgfpjc1OeY1OLmA4t2KOWWURTDRXky+eWO0LZhI33pQNT9gYxANUXfh5p/zYephYni6GPRsksQ==
   dependencies:
     cluster-key-slot "^1.1.0"
     debug "^4.3.1"
