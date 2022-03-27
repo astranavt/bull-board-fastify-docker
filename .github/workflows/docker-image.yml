@@ -80,7 +80,7 @@ jobs:
         with:
           context: ./ 
           file: ./Dockerfile
-          builder: ${{ steps.buildx.outputs.name }}
+          builder: ${{ steps.meta.outputs.name }}
           push: true
           # image_name: astranavt/bull-board-fastify-docker
           tags: ${{ steps.meta.outputs.tags }}
