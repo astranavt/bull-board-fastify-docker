@@ -46,7 +46,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           tag_prefix: ""
 
-
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v3.6.2
@@ -72,8 +71,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      -
-        name: Build and push
+      - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
         with:
