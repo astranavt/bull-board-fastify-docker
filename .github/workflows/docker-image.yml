@@ -66,6 +66,11 @@ jobs:
           github-token: ${{ github.token }}
           # list of Docker images to use as base name for tags
           images: astranavt/bull-board-fastify-docker
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}          
  
       -
         name: Build and push
