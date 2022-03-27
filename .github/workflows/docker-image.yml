@@ -63,6 +63,8 @@ jobs:
         with:
           github-token: ${{ github.token }}
           images: astranavt/bull-board-fastify-docker
+          flavor:
+            latest=true
           tags: |
             type=semver,enable=true,priority=900,pattern={{version}}
             type=semver,enable=true,priority=1000,pattern={{major}}.{{minor}}.{{patch}}       
