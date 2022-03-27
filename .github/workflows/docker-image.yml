@@ -43,7 +43,7 @@ jobs:
         uses: mathieudutour/github-tag-action@v6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          
+
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
         with:
@@ -57,6 +57,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+          
       -    
         name: Docker meta
         id: docker_meta
