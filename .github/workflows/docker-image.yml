@@ -75,6 +75,7 @@ jobs:
             type=semver,enable=true,priority=900,pattern={{version}}
             type=semver,enable=true,priority=1000,pattern={{major}}.{{minor}}.{{patch}}       
             type=ref,event=branch
+            type=ref,event=tag
             type=ref,event=pr
  
       -
@@ -87,7 +88,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           # image_name: astranavt/bull-board-fastify-docker
-          tags: ${{ github.repository }}:${{ env.RELEASE_VERSION }}
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
@@ -97,3 +98,4 @@ jobs:
 
       - name: Tags meta.outputs.tags 
         run: echo ${{ steps.meta.outputs.tags }}
+
