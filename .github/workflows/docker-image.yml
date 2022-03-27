@@ -2,7 +2,8 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ main ]
+    branches: 
+      - main
     tags:
       - 'v*'
   pull_request:
@@ -73,7 +74,8 @@ jobs:
           images: astranavt/bull-board-fastify-docker
           tags: |
             type=semver,enable=true,priority=900,pattern={{version}}
-            type=semver,event=branch,enable=true,priority=1000,pattern={{major}}.{{minor}}.{{patch}}       
+            type=semver,enable=true,priority=1000,pattern={{major}}.{{minor}}.{{patch}}       
+            type=ref,event=branch
             type=ref,event=pr
  
       -
