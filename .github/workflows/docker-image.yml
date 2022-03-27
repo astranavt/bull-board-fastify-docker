@@ -60,7 +60,7 @@ jobs:
 
       -    
         name: Docker meta
-        id: docker_meta
+        id: meta
         uses: docker/metadata-action@v3.6.2
         with:
           github-token: ${{ github.token }}
@@ -80,7 +80,7 @@ jobs:
         with:
           context: ./ 
           file: ./Dockerfile
-          builder: ${{ steps.docker_meta.outputs.name }}
+          builder: ${{ steps.buildx.outputs.name }}
           push: true
           # image_name: astranavt/bull-board-fastify-docker
           tags: ${{ steps.meta.outputs.tags }}
