@@ -84,7 +84,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: astranavt/bull-board-fastify-docker:{{ steps.tag_version.outputs.new_tag }}
+          tags: astranavt/bull-board-fastify-docker:${{ steps.tag_version.outputs.new_tag }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
