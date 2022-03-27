@@ -70,10 +70,10 @@ jobs:
           # list of Docker images to use as base name for tags
           images: astranavt/bull-board-fastify-docker
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
             type=semver,enable=true,priority=900,pattern={{version}}
             type=semver,enable=true,priority=1000,pattern={{major}}.{{minor}}.{{patch}}       
+            type=ref,event=branch
+            type=ref,event=pr
  
       -
         name: Build and push
@@ -85,7 +85,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           # image_name: astranavt/bull-board-fastify-docker
-          tags: ${{ steps.tag_version.outputs.new_tag }}
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
