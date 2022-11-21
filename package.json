@@ -13,7 +13,7 @@
   "dependencies": {
     "@bull-board/fastify": "^3.10.1",
     "bullmq": "^1.78.1",
-    "fastify": "^3.27.4",
+    "fastify": "^3.29.4",
     "ioredis": "^5.0.1"
   },
   "devDependencies": {
