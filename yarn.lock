@@ -1055,10 +1055,10 @@ fastify-static@^4.6.1:
     readable-stream "^3.4.0"
     send "^0.17.1"
 
-fastify@^5.12.1:
-  version "5.12.1"
-  resolved "https://registry.yarnpkg.com/fastify/-/fastify-5.12.1.tgz#d3a736ed0d656d8ffeed909c7099809b24b9f008"
-  integrity sha512-FWi+tQvwxR/PeRX7Z2mhfEF5ozJ3jn9asiiclzKXNSzJRHAYcU924aIOKAdHFJ+YIKieh3cqr1IwCOvTr41B3Q==
+fastify@^5.12.6:
+  version "5.12.6"
+  resolved "https://registry.yarnpkg.com/fastify/-/fastify-5.12.6.tgz#b53d4145274d6c781673394d50587849179ebb9f"
+  integrity sha512-XeErl1DDsxdbhE9RPRJ05iNnfMhHRHHewVNNAJXaGTOaCY4wHb6rEizphhgzBq5YQe4JyqQWPpGd+hLh2PXXJA==
   dependencies:
     "@fastify/ajv-compiler" "^4.0.5"
     "@fastify/error" "^4.0.0"
